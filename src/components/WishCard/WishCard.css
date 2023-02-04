@@ -1,0 +1,69 @@
+.WishCard {
+  width: 210px;
+  height: 390px;
+  text-align: left;
+  margin: 0 10px 30px;
+  position: relative;
+  outline: 1px solid #e9e9eb;
+}
+.shirt_img {
+  width: 100%;
+  cursor: pointer;
+}
+.shirt_info {
+  padding: 10px;
+}
+.shirt-brand {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: #282c3f;
+  margin-bottom: 4px;
+  text-overflow: ellipsis;
+}
+.shirt-txt {
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.shirt-price {
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.wishlist-cross-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 20px;
+  height: 24px;
+  width: 24px;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  border: 1.2px solid #d4d5d9;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+.wishlist-cross {
+  top: 4px;
+  right: 4px;
+  transform: scale(0.8);
+  width: 14px;
+  height: 14px;
+  background-position: -1083px 0;
+  position: absolute;
+}
+.move-btn {
+  text-align: center;
+  font-size: 14px;
+  padding: 14px;
+  color: #ff3e6c;
+  font-weight: 600;
+  bottom: 0px;
+  border-top: 1px solid #e9e9eb;
+  cursor: pointer;
+}

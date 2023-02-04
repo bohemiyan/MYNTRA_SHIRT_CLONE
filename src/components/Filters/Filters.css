@@ -1,0 +1,36 @@
+.Filters {
+    width: 250px;
+}
+.filter-containers {
+    padding: 15px 25px;
+    border-bottom: 1px solid #edebef;
+    border-right: 1px solid #edebef;
+    position: relative;
+}
+.filter-clearAllBtn {
+    position: absolute;
+    top: 17px;
+    right: 35px;
+    font-weight: 600;
+    color: #ff3f6c;
+    font-size: 13px;
+    cursor: pointer;
+}
+.filter-containers label {
+    font-size: 14px;
+    cursor: pointer;
+}
+.gender-filters{
+    font-weight: 600;
+}
+.filter-items {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.filter-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}

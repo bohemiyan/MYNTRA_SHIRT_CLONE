@@ -1,0 +1,181 @@
+.Card {
+  width: 210px;
+  height: 360px;
+  text-align: left;
+  margin: 0 10px 30px;
+  position: relative;
+  cursor: pointer;
+ 
+}
+.Card:hover {
+  box-shadow: 0 2px 16px 4px rgb(40 44 63 / 7%);
+}
+.shirt_img {
+  width: 100%;
+  
+}
+.shirt_info {
+  
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+.shirt-brand {
+ 
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: #282c3f;
+  margin-bottom: 4px;
+  text-overflow: ellipsis;
+}
+.shirt-txt {
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.shirt-price {
+  font-size: 14px;
+  color: #282c3f;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.btns {
+  position: absolute;
+  width: calc(100% - 20px);
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+  top: 270px;
+  height: 65px;
+  
+  display: none;
+  cursor: context-menu;
+  /* border: 1px solid black; */
+ }
+.wishlist-icon {
+  width: 17px;
+  height: 22px;
+  background-position: -315px -186px;
+  margin-right: 5px;
+}
+
+.btns button {
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wishlist-btn {
+  padding: 4px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #d4d5d9;
+  color: #282c3f;
+  
+}
+.wishlist-btn:hover {
+  border: 1px solid#ff3e6c;
+}
+.wishlist-icon {
+  width: 17px;
+  height: 22px;
+  background-position: -315px -186px;
+  margin-right: 5px;
+}
+.btns p{
+font-size: small;
+color: #282c3f;
+  font-weight: 600;
+}
+
+.addbag-icon {
+  background-position: -2283px -40px;
+  width: 23px;
+  height: 22px;
+  transform: scale(.8);
+  margin-right: 5px;
+}
+
+
+
+
+
+/* view similer */
+.similer {
+  color: #ff3e6c;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  float: right;
+    bottom: 80px;
+  right: 15px;
+  cursor: pointer;
+  /* display: none; */
+  /* border: 1px solid black; */
+  border: none;
+   font-size: inherit;
+  border-radius: 1em;
+    background:#fff;
+  display: inline-flex;
+  align-items: center;
+  }
+
+  .similer button{
+    padding: 0;
+  }
+
+.similer>span {
+ position: relative;
+ height: 30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #ff3e6c;
+ font-size: 11px;
+  /* border: 1px solid rgb(210, 25, 25) */
+  border: none;
+}
+
+.spinner {
+  --size: 9.25em;
+  --offset-r: calc(var(--size) * -1);
+  --offset-l: 0;
+  --opacity: 0;
+  position: relative;
+  display: inline-flex;
+  height: var(--size);
+  width: var(--size);
+  margin-top: calc(var(--size) * -0.5);
+  margin-right: var(--offset-r);
+  margin-bottom: calc(var(--size) * -0.5);
+  margin-left: var(--offset-l);
+  box-sizing: border-box;
+  border: 0.125em solid rgba(255, 255, 255, 0.333);
+  border-top-color: white;
+  border-radius: 25%;
+  opacity: var(--opacity);
+  transition: 0.25s;
+  
+}
+
+button:active .spinner, button:focus .spinner, button:hover .spinner {
+  --width: 1em;
+  --offset-r: 0.333em;
+  --offset-l: -0.333em;
+  --opacity: 1;
+  -webkit-animation: 0.666s load infinite;
+          animation: 0.666s load infinite;
+}
+
+.smlrimg {
+  width:20%;
+  padding: 0;
+  
+}

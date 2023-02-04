@@ -1,0 +1,67 @@
+.ResultBox {
+    width: calc(100% - 250px);
+}
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px 30px;
+    border-bottom: 1px solid #edebef;
+}
+.sortbox {
+    padding: 9px 14px;
+    font-size: 14px;
+    color: #282c3f;
+    cursor: pointer;
+    width: 255px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #d4d5d9;
+    position: relative;
+    z-index: 1;
+}
+.downArrow-icon {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background-position: -367px -1px;
+    width: 15px;
+    height: 10px;
+}
+.sortByDropDown {
+    position: absolute;
+    left: -1px;
+    bottom: -73px;
+    padding: 0px;
+    width: 283px;
+    border-top: 0px;
+    display: none;
+}
+.sortByDropDown ul {
+    list-style-type: none;
+}
+.sortByDropDown li {
+    font-size: 14px;
+    color: #282c3f;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.sortByDropDown li:hover {
+    background-color:#d4d5d9;
+}
+.sortbox:hover, .sortByDropDown:hover {
+    box-shadow: 0 8px 10px 0 rgb(0 0 0 / 8%);
+}
+.shirtCards {
+    padding: 30px 20px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dummyCard {
+    width: 230px;
+}
+.no_shirt_found {
+    text-align: center;
+    color: #696e79;
+    font-size: 18px
+}
