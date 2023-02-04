@@ -19,7 +19,7 @@
 * Click the logo to reset all search and filters and move to the home page.
 * No products found page is implemented when the search results to zero and go to the home button is provided.
 * In the top it shows the result for which given search text if anything is searched, else it shows the gender for which the resulted shirts are, along with the resulted shirt count.
-* In mouseenter in each product card there is a view similer buttun. without functionality . It can be use later to add functionalitys. 
+* In mouse enter in each product card there is a view similar button. without functionality. It can be use later to add functionalities. 
 
 # Wishlist Page
 * The total number of shirts wishlisted is shown.
@@ -36,8 +36,8 @@
 # Product page
 * The product page shows the product details.
 * Hovering on product image it zoom in little bit.
-* Cliking on product image user can see full view of the product image.
-* Extra zoom in fullview product image.
+* Clicking on product image user can see full view of the product image.
+* Extra zoom in full view product image.
 * User can select size of the product. 
-* Pincode cheking - to check if the product is avilable at those pincode.
+* Pincode checking - to check if the product is available at those pin code.
 
