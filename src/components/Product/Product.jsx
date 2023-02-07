@@ -45,6 +45,8 @@ function Product() {
     }
   }
 
+
+  
  function selectsz(){ const sizeBtns = document.querySelectorAll('.circles'); // selecting size buttons
 let checkedBtn = 0; // current selected button
 

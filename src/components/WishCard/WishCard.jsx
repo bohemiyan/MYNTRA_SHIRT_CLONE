@@ -10,6 +10,7 @@ function WishCard({ id, txt, img, price }) {
 
   function removeFromWishList() {
     setWishlist([...wishlist.filter((e) => e[0] !== id)]);
+    //toast
     toast("1 Product removed from Wishlist");
   }
   function moveToBag() {
@@ -17,6 +18,7 @@ function WishCard({ id, txt, img, price }) {
       setBag([...bag, [id, txt, img, price]]);
     }
     setWishlist([...wishlist.filter((e) => e[0] !== id)]);
+    //toast
     toast("1 Product moved to Bag");
   }
   function navProductPage() {

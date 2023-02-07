@@ -36,10 +36,13 @@ function App() {
     setShirtData(sortedList);
   }
 
+  //filter box 
+  //it is used to store filtered datas in Shirt data states which is used by resulbox component.
   useEffect(() => {
     let brands = [];
     let prices = [];
     let shirts = [...filteredShirtData];
+     //creating brands
     filteredShirtData.forEach((data) => {
       let bt = [];
       if (data[1].includes("Men")) bt = data[1].split(" Men ");
@@ -50,6 +53,7 @@ function App() {
     });
     setFilterBrands([...new Set(brands)]);
 
+    //creating price bands
     filteredShirtData.forEach((data) => {
       if (data[3] <= 600) prices.push(600);
       else if (data[3] <= 750) prices.push(750);
@@ -58,6 +62,7 @@ function App() {
     });
     setFilterPrices([...new Set(prices)].sort((a, b) => a - b));
 
+    //this part of the code is use to control clear filter.
     if (selectedFilterBrands.length > 0) {
       shirts = shirts.filter((data) => {
         for (let i = 0; i < selectedFilterBrands.length; i++) {
@@ -79,6 +84,7 @@ function App() {
     }
     if (sortBox === "Price: Low to High") sortLtoH(shirts);
     else if (sortBox === "Price: High to Low") sortHtoL(shirts);
+    //finally shirt data set
     else setShirtData(shirts);
     if (
       selectedFilterBrands.length === 0 &&
@@ -87,8 +93,13 @@ function App() {
       sortBox === "Recommended"
     )
       setClearAllFilters(true);
+     // console.log("app.js useeffectrenders");
   }, [filteredShirtData, selectedFilterBrands, selectedFilterPrices, genderName, sortBox]);
 
+  // filterbox
+
+
+  //clear filter
   useEffect(() => {
     if (clearAllFilters === true) {
       document.querySelectorAll(".sortByDropDown li").forEach((li) => (li.style.fontWeight = "100"));
@@ -101,8 +112,11 @@ function App() {
       setGenderName("Everyone");
       setSelectedFilterBrands([]);
       setSelectedFilterPrices([]);
+     // console.log("clearfilter renderd");
     }
   }, [clearAllFilters, searchedData]);
+//clear filter
+
 
   return (
     <div className="App">

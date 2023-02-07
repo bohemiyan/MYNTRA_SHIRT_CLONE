@@ -10,7 +10,7 @@ const Card = ({ida, id, brand, txt, img, price}) => {
   const {wishlist,setWishlist, setProduct, setPage } = useContext(StoreContext);
  
  
- 
+ //wishlist button show and hide.
     function showBtns() {
     document.getElementById(id).style.display = "block";
    
@@ -25,6 +25,8 @@ const Card = ({ida, id, brand, txt, img, price}) => {
     if (wishlist.map((e) => e[0]).includes(id)) toast("This Product already in Wishlist");
     else {
       setWishlist([...wishlist, [id, brand + " " + txt, img, price]]);
+
+      //throw toast notification.
       toast("1 Product added to Wishlist");
     }
   }

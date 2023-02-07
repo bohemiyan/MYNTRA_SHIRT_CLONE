@@ -33,6 +33,8 @@ function Filters() {
     setShirtData(sortedList);
   }
 
+
+  //gender filteration
   function setGender(gender) {
     setClearAllFilters(false);
     setGenderName(gender);
@@ -51,23 +53,32 @@ function Filters() {
     else setShirtData(filter_data);
   }
 
+
+  //brand filteration
   function setBrands(brand) {
     setClearAllFilters(false);
     if (document.getElementById(brand).checked) {
       setSelectedFilterBrands([...selectedFilterBrands, brand]);
+      // console.log(selectedFilterBrands,brand);
     } else {
       setSelectedFilterBrands(selectedFilterBrands.filter((e) => e !== brand));
+      // console.log(selectedFilterBrands,brand);
     }
   }
+
+  //price filteration
   function setPrices(price) {
     setClearAllFilters(false);
     if (document.getElementById(price).checked) {
       setSelectedFilterPrices([...selectedFilterPrices, price]);
+      // console.log(selectedFilterPrices,price);
     } else {
       setSelectedFilterPrices(selectedFilterPrices.filter((e) => e !== price));
+      // console.log(selectedFilterPrices,price);
     }
   }
 
+  //brand filtering button
   let brandfilters = filterBrands.map((brand, index) => {
     return (
       <div key={brand + index}>
@@ -82,7 +93,9 @@ function Filters() {
       </div>
     );
   });
+//console.log(filterBrands);
 
+  //price filtering button
   let pricefilters = filterPrices.map((price, index) => {
     return (
       <div key={price + index}>
