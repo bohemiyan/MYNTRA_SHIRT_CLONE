@@ -29,7 +29,7 @@ function Navbar() {
     search_txt = search_txt.replace(/\s+/g,' ').trim();
     setSearchedData(search_txt);
     search_txt = search_txt.toLowerCase();
-    document.getElementById("search_txt").value = "";
+    document.getElementById("search_txt").value =search_txt;
     setFilteredShirtData(data.filter((e) => e[1].toLowerCase().includes(search_txt)));
   }
 
