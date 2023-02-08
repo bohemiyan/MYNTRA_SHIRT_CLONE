@@ -61,12 +61,12 @@ function App() {
       else if (data[3] <= 7000) prices.push(7000);
     });
     setFilterPrices([...new Set(prices)].sort((a, b) => a - b));
-
-    //this part of the code is use to control clear filter.
+    
+    //this part of the code is use to control clear filter. and set shirt . and return a value to reset clear fiilter button.
     if (selectedFilterBrands.length > 0) {
       shirts = shirts.filter((data) => {
         for (let i = 0; i < selectedFilterBrands.length; i++) {
-          if (data[1].includes(selectedFilterBrands[i])) return true;
+          if (data[1].includes(selectedFilterBrands[i]))return true;
         }
         return false;
       });
@@ -93,12 +93,12 @@ function App() {
       sortBox === "Recommended"
     )
       setClearAllFilters(true);
-     // console.log("app.js useeffectrenders");
+    //  console.log("app.js useeffectrenders");
   }, [filteredShirtData, selectedFilterBrands, selectedFilterPrices, genderName, sortBox]);
 
   // filterbox
 
-
+  
   //clear filter
   useEffect(() => {
     if (clearAllFilters === true) {

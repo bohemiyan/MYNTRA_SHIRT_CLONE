@@ -6,7 +6,7 @@ import "./ResultBox.css";
 import { Card } from "../../components";
 
 function ResultBox() {
-  const { shirtData, setShirtData, sortBox, setSortBox, setClearAllFilters } = useContext(StoreContext);
+  const { shirtData, setShirtData, sortBox, setSortBox, setClearAllFilters,filteredShirtData } = useContext(StoreContext);
 
   
   let cards = shirtData.map((data) => {
@@ -61,6 +61,15 @@ function ResultBox() {
     sortedList.sort((a, b) => b[3] - a[3]);
     setShirtData(sortedList);
   }
+  function Recomended() {
+    setClearAllFilters(false);
+    setSortBox("Recommended");
+    document.querySelectorAll(".sortByDropDown li").forEach((li) => (li.style.fontWeight = "100"));
+    document.querySelector("#RCM").style.fontWeight = "600";
+
+
+    setShirtData(filteredShirtData);
+  }
 
   return (
     <div className="ResultBox">
@@ -70,6 +79,9 @@ function ResultBox() {
           <span className="web_sprite downArrow-icon"></span>
           <div className="sortbox sortByDropDown" onMouseLeave={hideSortByDropDown2}>
             <ul>
+            <li id="RCM" onClick={Recomended}>
+            Recommended
+              </li>
               <li id="LTH" onClick={sortLtoH}>
                 Price: Low to High
               </li>
