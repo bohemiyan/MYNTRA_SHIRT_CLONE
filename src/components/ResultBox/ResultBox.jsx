@@ -62,12 +62,9 @@ function ResultBox() {
     setShirtData(sortedList);
   }
   function Recomended() {
-    setClearAllFilters(false);
     setSortBox("Recommended");
     document.querySelectorAll(".sortByDropDown li").forEach((li) => (li.style.fontWeight = "100"));
     document.querySelector("#RCM").style.fontWeight = "600";
-
-
     setShirtData(filteredShirtData);
   }
 
