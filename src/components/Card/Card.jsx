@@ -5,7 +5,7 @@ import smlrimg from "./similr.png"
 
 import "./Card.css";
 
-const Card = ({ida, id, brand, txt, img, price}) => {
+const Card = ({id, brand, txt, img, price}) => {
   //const { bag, wishlist, setBag, setWishlist, setProduct, setPage } = useContext(StoreContext);
   const {wishlist,setWishlist, setProduct, setPage } = useContext(StoreContext);
  

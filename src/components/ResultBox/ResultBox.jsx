@@ -8,7 +8,7 @@ import { Card } from "../../components";
 function ResultBox() {
   const { shirtData, setShirtData, sortBox, setSortBox, setClearAllFilters,filteredShirtData } = useContext(StoreContext);
 
-  
+  //card creation
   let cards = shirtData.map((data) => {
     let brand = "",
       txt = "";
@@ -27,11 +27,14 @@ function ResultBox() {
       txt = "Girls " + bt[1];
     }
     brand = bt[0];
+   
   
 
     return <Card key={data[0]} id={data[0]} img={data[2]} brand={brand} txt={txt} price={data[3]} />;
   });
 
+
+  //shorting dropdown 
   function showSortByDropDown() {
     document.querySelector(".sortByDropDown").style.display = "block";
   }
