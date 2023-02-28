@@ -2,6 +2,9 @@
 
 **Myntra Application created from scratch using React JS.**
 
+# Getting Started
+```npm start```
+
 **List of features implemented -**
 
 # Home Page
