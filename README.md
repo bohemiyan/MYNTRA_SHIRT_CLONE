@@ -2,11 +2,10 @@
 
 **Myntra Application created from scratch using React JS.**
 
-**List of features implemented -**
 ##Getting Started
 ```npm start```
 
-
+**List of features implemented -**
 # Home Page
 * Sorting filter - sorts the resulting shirts.
 * Gender, brand and price filter - filters the resulting shirts.
