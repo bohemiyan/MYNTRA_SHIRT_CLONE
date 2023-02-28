@@ -2,7 +2,7 @@
 
 **Myntra Application created from scratch using React JS.**
 
-<<<<<<< HEAD
+
 # Getting Started
 ```npm start```
 
